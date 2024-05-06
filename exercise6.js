@@ -5,91 +5,106 @@ Giai đoạn 1: Khai báo 15 biến có kiểu dữ liệu là integer.
 Giai đoạn 2: Sử dụng khái niệm hàm để rút ngắn code trên và vẫn được kết quả in ra console như giai đoạn 1.
  */
 
-// let number1 = 123;
-// number1 += 5;
-// number1 *= 5;
-// number1 -= 15;
-// console.log(number1);
-// let number2 = 68;
-// number2 += 5;
-// number2 *= 5;
-// number2 -= 15;
-// console.log(number2);
-// let number3 = 88;
-// number3 += 5;
-// number3 *= 5;
-// number3 -= 15;
-// console.log(number3);
-// let number4 = 64;
-// number4 += 5;
-// number4 *= 5;
-// number4 -= 15;
-// console.log(number4);
-// let number5 = 58;
-// number5 += 5;
-// number5 *= 5;
-// number5 -= 15;
-// console.log(number5);
-// let number6 = 56;
-// number6 += 5;
-// number6 *= 5;
-// number6 -= 15;
-// console.log(number6);
-// let number7 = 35;
-// number7 += 5;
-// number7 *= 5;
-// number7 -= 15;
-// console.log(number7);
-// let number8 = 78;
-// number8 += 5;
-// number8 *= 5;
-// number8 -= 15;
-// console.log(number8);
-// let number9 = 58;
-// number9 += 5;
-// number9 *= 5;
-// number9 -= 15;
-// console.log(number9);
-// let number10 = 55;
-// number10 += 5;
-// number10 *= 5;
-// number10 -= 15;
-// console.log(number10);
-// let number11 = 35;
-// number11 += 5;
-// number11 *= 5;
-// number11 -= 15;
-// console.log(number11);
-// let number12 = 45;
-// number12 += 5;
-// number12 *= 5;
-// number12 -= 15;
-// console.log(number12);
-// let number13 = 78;
-// number13 += 5;
-// number13 *= 5;
-// number13 -= 15;
-// console.log(number13);
-// let number14 = 68;
-// number14 += 5;
-// number14 *= 5;
-// number14 -= 15;
-// console.log(number14);
-// let number15 = 81;
-// number15 += 5;
-// number15 *= 5;
-// number15 -= 15;
-// console.log(number15);
 
-function createNumber(count) {
+// let integerNumber1 = 123;
+// integerNumber1 += 5;
+// integerNumber1 *= 5;
+// integerNumber1 -= 15;
+// console.log(integerNumber1);
+
+// let integerNumber2 = 68;
+// integerNumber2 += 5;
+// integerNumber2 *= 5;
+// integerNumber2 -= 15;
+// console.log(integerNumber2);
+
+// let integerNumber3 = 88;
+// integerNumber3 += 5;
+// integerNumber3 *= 5;
+// integerNumber3 -= 15;
+// console.log(integerNumber3);
+
+// let integerNumber4 = 64;
+// integerNumber4 += 5;
+// integerNumber4 *= 5;
+// integerNumber4 -= 15;
+// console.log(integerNumber4);
+
+// let integerNumber5 = 58;
+// integerNumber5 += 5;
+// integerNumber5 *= 5;
+// integerNumber5 -= 15;
+// console.log(integerNumber5);
+
+// let integerNumber6 = 56;
+// integerNumber6 += 5;
+// integerNumber6 *= 5;
+// integerNumber6 -= 15;
+// console.log(integerNumber6);
+
+// let integerNumber7 = 35;
+// integerNumber7 += 5;
+// integerNumber7 *= 5;
+// integerNumber7 -= 15;
+// console.log(integerNumber7);
+
+// let integerNumber8 = 78;
+// integerNumber8 += 5;
+// integerNumber8 *= 5;
+// integerNumber8 -= 15;
+// console.log(integerNumber8);
+
+// let integerNumber9 = 58;
+// integerNumber9 += 5;
+// integerNumber9 *= 5;
+// integerNumber9 -= 15;
+// console.log(integerNumber9);
+
+// let integerNumber10 = 55;
+// integerNumber10 += 5;
+// integerNumber10 *= 5;
+// integerNumber10 -= 15;
+// console.log(integerNumber10);
+
+// let integerNumber11 = 35;
+// integerNumber11 += 5;
+// integerNumber11 *= 5;
+// integerNumber11 -= 15;
+// console.log(integerNumber11);
+
+// let integerNumber12 = 45;
+// integerNumber12 += 5;
+// integerNumber12 *= 5;
+// integerNumber12 -= 15;
+// console.log(integerNumber12);
+
+// let integerNumber13 = 78;
+// integerNumber13 += 5;
+// integerNumber13 *= 5;
+// integerNumber13 -= 15;
+// console.log(integerNumber13);
+
+// let integerNumber14 = 68;
+// integerNumber14 += 5;
+// integerNumber14 *= 5;
+// integerNumber14 -= 15;
+// console.log(integerNumber14);
+
+// let integerNumber15 = 81;
+// integerNumber15 += 5;
+// integerNumber15 *= 5;
+// integerNumber15 -= 15;
+// console.log(integerNumber15);
+
+function createIntegerNumber(count) {
   for (let i = 0; i < count; i++) {
-    let number = Math.floor(Math.random() * 1000);
-    console.log(number);
-    number += 5;
-    number *= 5;
-    number -= 15;
-    console.log(number);
+    let integerNumber = Math.floor(Math.random() * 1000);
+    console.log(integerNumber);
+    integerNumber += 5;
+    integerNumber *= 5;
+    integerNumber -= 15;
+    console.log(integerNumber);
   }
 }
 
-createNumber(15);
+createIntegerNumber(15);

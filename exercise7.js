@@ -67,9 +67,7 @@ let checkName = (person) => {
   if (!person) {
     console.log("Object does not exist");
   } else {
-    if (!person.name) {
-      console.log("Name of person is null");
-    } else if (person.name === "abc") {
+    if (person.name === "abc") {
       person.name = "xyz";
     }
   }
