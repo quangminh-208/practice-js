@@ -2,17 +2,17 @@
 Hãy viết một chương trình khai báo tất cả các biến tương ứng với các kiểu dữ liệu đã học, 
 in nó ra console.*/
 
-let number1 = 123;
+let age = 26;
 
-let number2 = 20.8;
+let weight = 65.5;
 
-let isDone = true;
+let isMarried = false;
 
-let char = "@";
+let specialCharacter = "@";
 
-let array = [1, "two", true, 4.01];
+let peopleList = ["John", "Jack", "Sammuel", "David"];
 
-let object = {
+let alex = {
   name: "Alex",
   age: 23,
   isMarried: false,
@@ -25,34 +25,38 @@ let object = {
 let sum = (a, b) => {
   return a + b;
 };
-console.log("===== All data types =====");
-console.log("Integer: ", number1);
-console.log("Float", number2);
-console.log("Boolean:", isDone);
-console.log("Char:", char);
-console.log("Array:", array);
-console.log("Object:", object);
+console.log("===== All data types example =====");
+console.log("Integer: age =  ", age);
+console.log("Float: weight = ", weight);
+console.log("Boolean: isMarried = ", isMarried);
+console.log("Char: specialCharacter = ", specialCharacter);
+console.log("Array: peopleList = ", peopleList);
+console.log("Object: alex = ", alex);
 console.log("Function:", sum);
 
 /* 2. Bài tập gán giá trị mới cho biến.
 Với các biến đã khai báo ở trên, hãy thay đổi giá trị cho các biến đã khai báo 
 và in giá trị hiện tại ra màn hình console.
 */
-number1 = 456;
-number2 = 0.5;
-isDone = false;
-char = "!";
-array = [];
-object = {};
+age = 18;
+weight = 52.4;
+isMarried = true;
+specialCharacter = "!";
+peopleList = ["Minh", "Maria", "Sammuel", "David"];
+alex = {
+  name: "Maria",
+  age: 30,
+  isMarried: false,
+};
 sum = (a, b, c) => {
   return a + b + c;
 };
 
 console.log("===== Change data =====");
-console.log("number1: ", number1);
-console.log("number2", number2);
-console.log("isDone:", isDone);
-console.log("char:", char);
-console.log("array:", array);
-console.log("object:", object);
+console.log("age: ", age);
+console.log("weight", weight);
+console.log("isMarried:", isMarried);
+console.log("specialCharacter:", specialCharacter);
+console.log("peopleList:", peopleList);
+console.log("alex:", alex);
 console.log("sum:", sum);

@@ -19,14 +19,11 @@ let person0 = {
   sex: null,
   phoneNumber: null,
 };
-console.table(person0);
 
 person0.name = "Minh";
 person0.age = 22;
 person0.sex = "Male";
 person0.phoneNumber = "0123456789";
-
-console.table(person0);
 
 person0.getInfo = function () {
   console.table(person0);
@@ -46,7 +43,7 @@ person0.addAge = function (numb) {
   this.age += numb;
 };
 
-function Person(name, age, sex, phoneNumber) {
+function person(name, age, sex, phoneNumber) {
   this.name = name;
   this.age = age;
   this.sex = sex;
@@ -60,14 +57,22 @@ function Person(name, age, sex, phoneNumber) {
   };
 }
 
-let person1 = new Person("Hoang", 26, "Male", "0568358259");
-let person2 = new Person("Trang", 21, "Female", "099358259");
-let person3 = new Person("Jonh", 30, "Male", "0772258259");
-let person4 = new Person("abc", 42, "Male", "0344358259");
-let person5 = new Person("Katty", 25, "Female", "0877358259");
+let person1 = new person("Hoang", 26, "Male", "0568358259");
+let person2 = new person("Trang", 21, "Female", "099358259");
+let person3 = new person("Jonh", 30, "Male", "0772258259");
+let person4 = new person("abc", 42, "Male", "0344358259");
+let person5 = new person("Katty", 25, "Female", "0877358259");
 
 let checkName = (person) => {
-  if (person.name === "abc") person.name = "xyz";
+  if (!person) {
+    console.log("Object does not exist");
+  } else {
+    if (!person.name) {
+      console.log("Name of person is null");
+    } else if (person.name === "abc") {
+      person.name = "xyz";
+    }
+  }
 };
 
 checkName(person1);
@@ -76,12 +81,19 @@ checkName(person3);
 checkName(person4);
 checkName(person5);
 
+let olo;
+checkName(olo);
+
 let arrPeople = [person1, person2, person3, person4, person5];
 console.log("arrPeople:", arrPeople);
 
 arrPeople.forEach((item, index) => {
-  if (item.age > 10) item.name = "tre-vi-thanh-nien";
-  if (index < 4) item.age += 10;
+  if (item.age > 10) {
+    item.name = "tre-vi-thanh-nien";
+  }
+  if (index < 4) {
+    item.age += 10;
+  }
 });
 
 console.log("===> After all changes, arrPeople: ", arrPeople);
